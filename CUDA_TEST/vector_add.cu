@@ -97,7 +97,7 @@ void warmup()
 
 int main()
 {
-    int N = 20000000;
+    int N = 5000000;
     int nbytes = N * sizeof(FLOAT);
 
     /* 1D block */
