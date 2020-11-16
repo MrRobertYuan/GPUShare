@@ -120,8 +120,11 @@ int main()
 
     /* allocate GPU mem */
     cudaMalloc((void **)&dx, nbytes);
+    cudaFree(dx);
     cudaMalloc((void **)&dy, nbytes);
+    cudaFree(dy);
     cudaMalloc((void **)&dz, nbytes);
+    cudaFree(dz);
 
     if (dx == NULL || dy == NULL || dz == NULL) {
         printf("couldn't allocate GPU memory\n");
